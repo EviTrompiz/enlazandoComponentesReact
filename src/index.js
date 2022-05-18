@@ -1,13 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import App from './components/App';
+import './assets/css/app.css';
 import reportWebVitals from './reportWebVitals';
+import {BrowserRouter} from 'react-router-dom'; //Se agregó en la clase
 
-ReactDOM.render(
-  <React.StrictMode>
+ReactDOM.render( //Se cambia por el import que se agrtegró, es decir el BrowserRouter
+  <BrowserRouter> 
     <App />
-  </React.StrictMode>,
+  </BrowserRouter>,
   document.getElementById('root')
 );
 
